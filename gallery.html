@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SRB Healthcare</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="SRB Healthcare" class="logo-img">
+                    <span class="logo-text">SRB Healthcare</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-background">
+                <div class="page-hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="page-hero-content">
+                    <div class="page-hero-badge">
+                        <span class="badge-icon">📸</span>
+                        <span>Showcasing Excellence in Medical Infrastructure</span>
+                    </div>
+                    <h1 class="page-title">Project Gallery</h1>
+                    <p class="page-subtitle">Showcasing Our Medical Infrastructure Solutions Across India</p>
+                    <div class="page-hero-features">
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>500+ Projects</span>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Pan India Presence</span>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Proven Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="oxygen">Oxygen Plants</button>
+                    <button class="filter-btn" data-filter="mgps">MGPS</button>
+                    <button class="filter-btn" data-filter="modular">Modular OT</button>
+                    <button class="filter-btn" data-filter="compressor">Air Compressors</button>
+                    <button class="filter-btn" data-filter="suction">Suction/Air Systems</button>
+                    <button class="filter-btn" data-filter="curtains">ICU Curtains</button>
+                    <button class="filter-btn" data-filter="etp-stp">ETP/STP</button>
+                    <button class="filter-btn" data-filter="installations">Installations</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Oxygen Plants -->
+                    <div class="gallery-item" data-category="oxygen">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/oxygen-plant-1.jpg" alt="PSA Medical Oxygen Plant Installation">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>PSA Medical Oxygen Plant</h3>
+                                    <p>500 Nm³/hr capacity installation at major hospital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="oxygen">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/oxygen-plant-2.jpg" alt="Oxygen Plant Control Room">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Oxygen Plant Control System</h3>
+                                    <p>Advanced monitoring and control interface</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="oxygen">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/oxygen-plant-3.jpg" alt="Oxygen Storage Tanks">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Oxygen Storage System</h3>
+                                    <p>High-capacity storage tanks with safety features</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MGPS -->
+                    <div class="gallery-item" data-category="mgps">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/mgps-1.jpg" alt="Medical Gas Pipeline System">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Medical Gas Pipeline</h3>
+                                    <p>Complete MGPS installation in ICU ward</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="mgps">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/mgps-2.jpg" alt="Gas Manifold Room">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Gas Manifold System</h3>
+                                    <p>Central gas manifold with safety monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="mgps">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/mgps-3.jpg" alt="Bed Head Unit">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Bed Head Units</h3>
+                                    <p>Multi-gas outlets with monitoring systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modular OT -->
+                    <div class="gallery-item" data-category="modular">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/modular-ot-1.jpg" alt="Modular Operation Theatre">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Modular Operation Theatre</h3>
+                                    <p>State-of-the-art surgical suite with HEPA filtration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="modular">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/modular-ot-2.jpg" alt="OT Ceiling System">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>OT Ceiling System</h3>
+                                    <p>Integrated medical pendants and lighting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="modular">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/modular-ot-3.jpg" alt="Surgical Lights">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Advanced Surgical Lights</h3>
+                                    <p>Shadow-free LED surgical lighting system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Air Compressors -->
+                    <div class="gallery-item" data-category="compressor">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/compressor-1.jpg" alt="Medical Air Compressor">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Medical Air Compressor</h3>
+                                    <p>Oil-free compressor system for hospital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="compressor">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/compressor-2.jpg" alt="Compressor Room Setup">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Compressor Room</h3>
+                                    <p>Complete air compressor installation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suction/Air Systems -->
+                    <div class="gallery-item" data-category="suction">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/suction-1.jpg" alt="Medical Suction System">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Central Suction System</h3>
+                                    <p>Vacuum system for medical applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="suction">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/suction-2.jpg" alt="Air Dryer System">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Medical Air Dryer</h3>
+                                    <p>Desiccant air drying system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ICU Curtains -->
+                    <div class="gallery-item" data-category="curtains">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/curtains-1.jpg" alt="ICU Curtains">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>ICU Cubicle Curtains</h3>
+                                    <p>Antimicrobial curtains with track system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="curtains">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/curtains-2.jpg" alt="Hospital Curtains">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Ward Curtains</h3>
+                                    <p>Patient privacy curtains in hospital ward</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ETP/STP Plants -->
+                    <div class="gallery-item" data-category="etp-stp">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/etp-1.jpg" alt="Effluent Treatment Plant">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Effluent Treatment Plant</h3>
+                                    <p>Hospital wastewater treatment system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="etp-stp">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/stp-1.jpg" alt="Sewage Treatment Plant">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Sewage Treatment Plant</h3>
+                                    <p>Compact STP for medical facility</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Installations -->
+                    <div class="gallery-item" data-category="installations">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/installation-1.jpg" alt="Installation Team">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Professional Installation</h3>
+                                    <p>Our technical team at work</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="installations">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/installation-2.jpg" alt="Commissioning">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>System Commissioning</h3>
+                                    <p>Testing and commissioning of MGPS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="installations">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/installation-3.jpg" alt="Training Session">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Staff Training</h3>
+                                    <p>Training hospital staff on new systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="installations">
+                        <div class="gallery-image-container">
+                            <img src="images/gallery/installation-4.jpg" alt="Completed Project">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Completed Infrastructure</h3>
+                                    <p>Fully operational medical gas system</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-load-more">
+                    <button class="btn btn-primary" id="loadMoreBtn">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-stats">
+            <div class="container">
+                <h2 class="section-title">Our Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <h3>Projects Completed</h3>
+                        <p>Across India and neighboring countries</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <h3>Hospital Chains</h3>
+                        <p>Trusted by major healthcare providers</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <h3>Years of Experience</h3>
+                        <p>In medical infrastructure solutions</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <h3>Support Available</h3>
+                        <p>Technical assistance and maintenance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>See Our Work in Action</h2>
+                    <p>Visit our installations or schedule a consultation to see how we can transform your healthcare facility</p>
+                    <a href="contact.html" class="btn btn-primary btn-large">Schedule Visit</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="SRB Healthcare" class="footer-logo-img">
+                        <h3>SRB Healthcare</h3>
+                    </div>
+                    <p>Complete Medical Infrastructure Solutions combining healthcare expertise with engineering excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">PSA Oxygen Plants</a></li>
+                        <li><a href="services.html">Medical Gas Pipeline</a></li>
+                        <li><a href="services.html">Modular OT</a></li>
+                        <li><a href="services.html">ETP/STP Plants</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong><br>
+                        205, 2nd Floor, Deepak Plaza, DC Chowk, Sector-9, Rohini, Delhi – 110085</p>
+                        <p><strong>Phone:</strong><br>
+                        +91 9711101616<br>
+                        +91 9971617626</p>
+                        <p><strong>Email:</strong><br>
+                        srbhealthcare27@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SRB Healthcare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
