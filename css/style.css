@@ -355,11 +355,12 @@ a:hover {
 }
 
 .logo-img {
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 160px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 86, 179, 0.2);
     transition: all 0.3s ease;
+    object-fit: contain;
 }
 
 .logo:hover .logo-img {
@@ -1959,6 +1960,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    justify-items: stretch;
 }
 
 .service-detail-content.reverse {
@@ -1969,73 +1971,100 @@ a:hover {
     direction: ltr;
 }
 
+.service-detail-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .service-detail-info h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .service-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--primary-red);
     font-weight: 600;
     margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
 }
 
 .service-detail-info p {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.15rem;
+    line-height: 1.8;
     color: var(--dark-gray);
     margin-bottom: 2rem;
+    font-weight: 400;
 }
 
 .service-features {
     list-style: none;
     margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 86, 179, 0.03);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
 }
 
 .service-features li {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    padding-left: 35px;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
     color: var(--dark-gray);
+    line-height: 1.6;
 }
 
 .service-features li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 2px;
     color: var(--success-green);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .service-applications {
     margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(196, 30, 58, 0.03);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-red);
 }
 
 .service-applications h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .service-applications span {
     display: inline-block;
-    background: rgba(0, 86, 179, 0.1);
+    background: linear-gradient(135deg, rgba(0, 86, 179, 0.1), rgba(0, 86, 179, 0.05));
     color: var(--primary-blue);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 500;
+    border: 1px solid rgba(0, 86, 179, 0.2);
+    transition: all 0.3s ease;
 }
 
 .service-detail-image {
     text-align: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .service-detail-image img {
@@ -2043,6 +2072,14 @@ a:hover {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    width: 100%;
+}
+
+.service-applications span:hover {
+    background: linear-gradient(135deg, rgba(0, 86, 179, 0.2), rgba(0, 86, 179, 0.1));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
 }
 
 /* Process Section */
@@ -3222,12 +3259,13 @@ a:hover {
 }
 
 .footer-logo-img {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 180px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    object-fit: contain;
 }
 
 .footer-logo:hover .footer-logo-img {
@@ -3516,8 +3554,13 @@ a:hover {
     }
     
     .footer-logo-img {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 130px;
+    }
+    
+    .logo-img {
+        height: 45px;
+        width: 120px;
     }
     
     .footer-badge {
@@ -3550,6 +3593,226 @@ a:hover {
     
     .footer-bottom-links a {
         font-size: 0.8rem;
+    }
+}
+
+/* Video Styling for Medical Gas Pipeline - Phone Frame Style */
+.service-video,
+.gallery-video {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.gallery-video {
+    min-height: 280px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(0, 86, 179, 0.8) 0%, 
+        rgba(196, 30, 58, 0.7) 100%);
+    border-radius: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.gallery-item:hover .video-overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.gallery-info h3 {
+    color: var(--primary-red);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.video-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .video-controls {
+    opacity: 1;
+}
+
+.video-play-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--primary-white);
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-play-btn:hover {
+    background: var(--primary-white);
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.video-play-btn:active {
+    transform: scale(0.95);
+}
+
+/* Service Detail Image Container - Phone Frame Style */
+.service-detail-image {
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-detail-image .video-overlay {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.service-detail-image:hover .video-overlay {
+    opacity: 0;
+}
+
+.service-detail-image .video-controls {
+    opacity: 0;
+}
+
+.service-detail-image:hover .video-controls {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Responsive Video - Phone Frame Style */
+@media (max-width: 768px) {
+    .service-video {
+        min-height: 300px;
+    }
+    
+    .gallery-video {
+        min-height: 200px;
+    }
+    
+    .video-play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    /* Responsive Service Layout */
+    .service-detail-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service-detail-content.reverse {
+        direction: ltr;
+    }
+    
+    .service-detail-image {
+        min-height: 300px;
+        order: -1;
+    }
+    
+    .service-detail-info {
+        padding: 0.5rem;
+    }
+    
+    .service-detail-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .service-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .service-detail-info p {
+        font-size: 1.05rem;
+    }
+    
+    .service-features {
+        padding: 1rem;
+    }
+    
+    .service-applications {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-video {
+        min-height: 250px;
+    }
+    
+    .gallery-video {
+        min-height: 180px;
+    }
+    
+    .video-play-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .service-detail-image {
+        min-height: 250px;
+    }
+    
+    .service-detail-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .service-subtitle {
+        font-size: 1rem;
+    }
+    
+    .service-detail-info p {
+        font-size: 1rem;
+    }
+    
+    .service-features {
+        padding: 0.8rem;
+    }
+    
+    .service-features li {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-applications {
+        padding: 0.8rem;
+    }
+    
+    .service-applications span {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 

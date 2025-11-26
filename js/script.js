@@ -328,6 +328,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Video control function
+function toggleVideo(button) {
+    const videoContainer = button.closest('.gallery-image-container, .service-detail-image');
+    const video = videoContainer.querySelector('video');
+    
+    if (video) {
+        if (video.paused) {
+            video.play();
+            button.textContent = '❚❚';
+        } else {
+            video.pause();
+            button.textContent = '▶';
+        }
+    }
+}
+
 // Utility functions
 const debounce = function(func, wait) {
     let timeout;
