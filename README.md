@@ -52,7 +52,7 @@ A professional healthcare infrastructure website for SRB Healthcare, featuring c
 - Modular & Semi-Modular Operation Theatres
 - ETP Plant
 - STP Plant
-- Air Compressor – Sales & Service
+- Screw Air Compressor – Sales & Service
 - ICU Curtains
 - Other medical infrastructure products
 
