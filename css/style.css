@@ -4509,8 +4509,8 @@ a:hover {
     }
     
     .logo-img {
-        height: 60px;
-        width: 168px;
+        height: 40px;
+        width: 112px;
         background: transparent !important;
         background-color: transparent !important;
         border-radius: 0;
@@ -4521,9 +4521,10 @@ a:hover {
     }
 
     .logo-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
+        white-space: nowrap;
     }
     
     .nav-menu {
