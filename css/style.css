@@ -3683,6 +3683,8 @@ a:hover {
 
     .logo-text {
         font-size: 1.8rem;
+        display: flex;
+        align-items: center;
     }
 
     .nav-container {
@@ -4402,6 +4404,8 @@ a:hover {
 
     .logo-text {
         font-size: 1.4rem;
+        display: flex;
+        align-items: center;
     }
     
     .nav-menu {
