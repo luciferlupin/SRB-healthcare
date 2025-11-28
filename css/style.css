@@ -3690,6 +3690,13 @@ a:hover {
     .logo-img {
         height: 100px;
         width: 280px;
+        background: transparent !important;
+        background-color: transparent !important;
+        border-radius: 0;
+        box-shadow: none;
+        object-fit: contain;
+        filter: brightness(1.1) contrast(1.1);
+        flex-shrink: 0;
     }
 
     .logo-text {
@@ -4418,6 +4425,13 @@ a:hover {
     .logo-img {
         height: 60px;
         width: 168px;
+        background: transparent !important;
+        background-color: transparent !important;
+        border-radius: 0;
+        box-shadow: none;
+        object-fit: contain;
+        filter: brightness(1.1) contrast(1.1);
+        flex-shrink: 0;
     }
 
     .logo-text {
