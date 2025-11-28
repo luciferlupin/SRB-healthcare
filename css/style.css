@@ -3621,6 +3621,17 @@ a:hover {
         z-index: 1001;
     }
     
+    .nav-container {
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        flex: 1;
+        justify-content: flex-start;
+    }
+    
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -4395,6 +4406,13 @@ a:hover {
     
     .nav-container {
         padding: 0 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        flex: 1;
+        justify-content: flex-start;
     }
     
     .logo-img {
