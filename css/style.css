@@ -3622,7 +3622,44 @@ a:hover {
     }
     
     .container {
-        padding: 0 1.5rem;
+        padding: 0 1rem !important;
+    }
+    
+    .why-content {
+        padding: 0 1rem !important;
+    }
+    
+    .hero-container {
+        padding: 0 1rem !important;
+    }
+    
+    .cta-content {
+        padding: 2rem 1rem !important;
+        margin: 0 1rem !important;
+    }
+    
+    .page-hero-content {
+        padding: 0 1rem !important;
+    }
+    
+    .about-content {
+        padding: 0 1rem !important;
+    }
+    
+    .overview-content {
+        padding: 0 1rem !important;
+    }
+    
+    .service-detail-content {
+        padding: 0 1rem !important;
+    }
+    
+    .gallery-grid {
+        padding: 0 1rem !important;
+    }
+    
+    .contact-grid {
+        padding: 0 1rem !important;
     }
     
     .nav-container {
@@ -4416,7 +4453,48 @@ a:hover {
     }
     
     .container {
-        padding: 0 1rem;
+        padding: 0 0.75rem !important;
+    }
+    
+    .why-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .hero-container {
+        padding: 0 0.75rem !important;
+    }
+    
+    .footer-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .cta-content {
+        padding: 1.5rem 0.75rem !important;
+        margin: 0 0.75rem !important;
+    }
+    
+    .page-hero-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .about-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .overview-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .service-detail-content {
+        padding: 0 0.75rem !important;
+    }
+    
+    .gallery-grid {
+        padding: 0 0.75rem !important;
+    }
+    
+    .contact-grid {
+        padding: 0 0.75rem !important;
     }
     
     .nav-container {
