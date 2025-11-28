@@ -3621,6 +3621,10 @@ a:hover {
         z-index: 1001;
     }
     
+    .container {
+        padding: 0 1.5rem;
+    }
+    
     .nav-container {
         padding: 0 15px;
         justify-content: space-between;
@@ -4409,6 +4413,10 @@ a:hover {
         display: flex;
         position: relative;
         z-index: 1001;
+    }
+    
+    .container {
+        padding: 0 1rem;
     }
     
     .nav-container {
